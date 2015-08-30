@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_background"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/maomao" 
+        android:contentDescription="@string/touxiang"/>
+
+    <com.android.view.GestureLockView
+        android:id="@+id/gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview1"
+        android:background="#0000" />
+
+    <Button
+        android:id="@+id/btnChangePwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gv"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#0000"
+        android:text="@string/changePwd"
+        android:textColor="#DCDCDC" />
+
+</RelativeLayout>
